@@ -1,0 +1,27 @@
+{
+  "name": "comments-b-gone",
+  "version": "1.0.0",
+  "description": "Bookmarklet to hide comments on Facebook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdukart/comments-b-gone.git"
+  },
+  "author": "Todd Dukart <tdukart@aloftinteractive.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tdukart/comments-b-gone/issues"
+  },
+  "homepage": "https://github.com/tdukart/comments-b-gone#readme",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "grunt": "^0.4.5",
+    "grunt-bookmarklet-thingy": "^0.2.0",
+    "grunt-contrib-uglify": "^0.11.0",
+    "htmlparser": "^1.7.7",
+    "jsdom": "^7.1.1"
+  }
+}
