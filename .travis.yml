@@ -3,7 +3,6 @@ node_js:
 - '0.11'
 before_install:
 - npm install grunt-cli bower -g
-- bower install
 script: bash ./deploy.sh
 env:
   global:
