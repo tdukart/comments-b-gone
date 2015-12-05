@@ -3,6 +3,7 @@ set -e #exit with nonzero exit code if anything fails
 
 #clear and recreate the dist directory
 rm -rf dist || exit 0;
+rm -rf build || exit 0;
 mkdir dist
 
 grunt
