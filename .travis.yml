@@ -1,8 +1,11 @@
+language: node_js
+node_js:
+- '0.11'
+before_install:
+- npm install grunt-cli bower -g
+- bower install
 script: bash ./deploy.sh
 env:
   global:
   - GH_REF: github.com/tdukart/comments-b-gone.git
   - secure: "ZgA8lpqO6hmaHE19U+B2ajaYIfPMujt0DmY6uIHcG8xHT6sxcLD6nJLxk6SChXGlQKUUMe/iHDNwv30uMYgjMkc4BNy/+pFGL5Iqpa4qRSnoxeMpbcTfs6cLQCNhqiJqtPYgDXvHbbYy1ISWxHRQVyvcmUGLyXWcX9ukovEwgJ05+yJsaOxq2Ln3hNQ/lFI44ItpjLcJOOWz2445gTQ+f3hJvtGyHlutQmMxlhLvR8oq9eiEjb8NcWiW4T/1ZuK+oH+4vRHsHz/IRf6DUzNriEzeVeAnTFyF48XGZ6hohbn6UHnZmYYOMxD4JkvWR0f5h75SUfJO6RgNGy6VNYC/OCy7wBEExGIPGaROkYo5BpSF5e5fzPCcMg8dJiwA3/jhuIFiCDdv2SSH8IMUCm93BBus8jYnFx5fExlZU7KnNkLqQFTDDijgIYPWwqg/MJv81zR/Mh5K6G/KCfxsCHvp+uy4SH5TjyDNdMCLccg+ipHDsHGyTjevlY4+VfQLW/yFV3vu6AO4AeTlG6qWmzzt7UmZ43ZS0p6N37JH44RHO9PdWDwoUmAFTic5pde9Wg2DExSSjxIqO4mD4FVNhp3/5lbCSuRUOFBfx47sPMVNctPo0n0/UcN9iDoRUvhJjEySql36fdHtnD/4jjhFrjR77nmxYjaOEBK3fggLZ+f+ggk="
-language: node_js
-node_js:
-- "0.10"
