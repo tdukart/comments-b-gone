@@ -41,7 +41,6 @@ module.exports = function (grunt) {
 
   grunt.registerMultiTask('html', "Generate HTML file", function () {
     var options = this.options(),
-      chalk = require('chalk'),
       fs = require('fs'),
       cheerio = require('cheerio'),
       bookmarklet = fs.readFileSync('build/bookmarklet.txt').toString();
@@ -60,7 +59,7 @@ module.exports = function (grunt) {
       var result = $.html();
 
       grunt.file.write(file.dest, result);
-      grunt.verbose.writeln('Wrote ' + chalk.cyan(file.dest));
+      grunt.verbose.writeln('Wrote ' + file.dest);
     });
   });
 
