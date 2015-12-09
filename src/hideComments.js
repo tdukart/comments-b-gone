@@ -1,7 +1,7 @@
 window.aloft = window.aloft || {};
 aloft.toggleFBComments = function () {
   if (!aloft.commentStyle) {
-    var css = '.UFIComment, .UFIReplyList {display: none;}', head = document.head || document.getElementsByTagName('head')[0], style = document.createElement('style');
+    var css = '.UFIComment, .UFIReplyList, .UFIPagerRow {display: none;}', head = document.head || document.getElementsByTagName('head')[0], style = document.createElement('style');
     style.type = 'text/css';
     if (style.styleSheet) {
       style.styleSheet.cssText = css;
