@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Comments-B-Gone</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.min.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <span class="navbar-brand">
+                Comments-B-Gone
+            </span>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="https://github.com/tdukart/comments-b-gone">
+                        <span class="octicon octicon-mark-github"></span>
+                        Fork on GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <p>
+        Facebook recently introduced a feature to show comments on your news feed, even for pages&apos; posts. And, if you&apos;re
+        like me, you follow a lot of news pages and get a lot of name-calling.
+    </p>
+
+    <p>
+        This bookmarklet will hide and show comments on Facebook by using their own styles. As of this version, you&apos;ll
+        still see some of the structure around them, but the comments themselves will be hidden. Enjoy!
+    </p>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2 class="panel-title">Installation</h2>
+        </div>
+        <div class="panel-body">
+            <p>
+                To install, drag this link to your bookmarks bar. Click the bookmark to hide or show Facebook comments.
+            </p>
+
+            <p class="bookmarklet">
+                <!-- the class is used in the build script to find this tag -->
+                <a class="btn btn-primary" href="javascript:(function(){;var%20numDependencies=0,loadedDependencies=0;function%20scriptLoaded()%7BloadedDependencies++;if(numDependencies===loadedDependencies)%7BafterDepsLoaded()%7D%7Dfunction%20afterDepsLoaded()%7Bwindow.aloft=window.aloft%7C%7C%7B%7D,aloft.toggleFBComments=function()%7Bif(aloft.commentStyle)aloft.commentStyle.remove(),aloft.commentStyle=null;else%7Bvar%20a=%22.UFIComment,%20.UFIReplyList,%20.UFIPagerRow%20%7Bdisplay:%20none;%7D%22,b=document.head%7C%7Cdocument.getElementsByTagName(%22head%22)%5B0%5D,c=document.createElement(%22style%22);c.type=%22text/css%22,c.styleSheet?c.styleSheet.cssText=a:c.appendChild(document.createTextNode(a)),b.appendChild(c),aloft.commentStyle=c%7D%7D,aloft.toggleFBComments()%7DafterDepsLoaded();})()">Toggle Comments</a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
