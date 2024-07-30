@@ -1,3 +1,6 @@
+# Deprecated
+This hasn't been updated in nine years, and definitely doesn't work anymore.
+
 # comments-b-gone
 Facebook recently introduced a feature to show comments on your news feed, even for pages' posts. And, if you're like me, you follow a lot of news pages and get a lot of name-calling.
 
